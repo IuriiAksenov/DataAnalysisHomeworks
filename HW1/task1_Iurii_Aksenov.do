@@ -1,3 +1,6 @@
+// Student’s Name and Surname Iurii Aksenov
+
+// ==================================
 // Task to do together
 
 use "D:\Downloads\Data_Analysis\25.01.2020\data_games.dta", clear
@@ -14,7 +17,7 @@ histogram crystalls_bought, bin(20) frequency normal (bin=20, start=0, width=84.
  // Task 3
  sum payment, detail
 
- // ==================================
+// ==================================
  
  // Task to do individually
 sysuse bpwide.dta
@@ -67,4 +70,14 @@ tabstat age, stats(max), if married==0 & tenure>50
 
 //Task g
 
+//not marries
+tabstat age, stats(N mean sd), if married==0
+
+//not college graduates
+tabstat age, stats(N mean sd), if collgrad==0
+
+//not members of the union
+tabstat age, stats(N mean sd), if union==0
+
+//not marries, not college graduates, not members of the union
 tabstat age, stats(N mean sd), if union==0 & collgrad==0 & married==0
