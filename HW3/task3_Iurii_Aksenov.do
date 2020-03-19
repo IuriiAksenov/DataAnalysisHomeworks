@@ -1,6 +1,5 @@
 // Iurii Aksenov Task 3 08.02.2020
 
-
 // Task 1
 use "D:\HSE\Data Analysis 2019 education year М 1 курс (code 117947)\Tasks\Task 3 08.02.2020\data_games.dta", clear
 
